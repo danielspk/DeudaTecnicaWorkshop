@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Deuda Técnica – En el Mundo del Software</title>
+
+		<meta name="description" content="Presentación sobre el concepto de Deuda Técnica">
+		<meta name="author" content="Daniel M. Spiridione">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="css/lib/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Deuda Técnica</h1>
+					<h3>en el Mundo del Software</h3>
+				</section>
+
+				<section>
+					<section>
+						<h2>¿Quién soy?</h2>
+						<h3>Daniel M. Spiridione</h3>
+						<p>
+							<small>
+								<a href="http://daniel-spiridione.com.ar">Website</a> - 
+								<a href="https://github.com/danielspk">Open Source</a> - 
+								<a href="https://twitter.com/dmsdesarrollos">Twitter</a> - 
+								<a href="https://ar.linkedin.com/in/daniel-mart%C3%ADn-spiridione-46695528">Linkedin</a>
+							</small>
+						</p>
+					</section>
+					<section data-background="img/hackerman.gif">Así me gustaría ser</section>
+					<section data-background="img/catmouse.gif">Pero así soy</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Concepto de Deuda Técnica</h2>
+						<p>Fue presentado por primera vez por <a href="https://en.wikipedia.org/wiki/Ward_Cunningham">Ward Cunningham</a> en el año 92.</p>
+					</section>
+					<section>
+						<h3>Ward Cunningham</h3>
+						<ul>
+							<li class="fragment">Fue el inventor de <a href="https://en.wikipedia.org/wiki/WikiWikiWeb">WikiWikiWeb</a>, el primer website de tipo wiki editable por usuarios.</li>
+							<li class="fragment">Participo en el <a href="http://agilemanifesto.org/iso/en/manifesto.html">Manifiesto Agil</a>.</li>
+							<li class="fragment">Colaboró con <a href="https://es.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> en el concepto de patrones de diseño (popularizado en el libro de <a href="https://en.wikipedia.org/wiki/Design_Patterns">GoF</a>).</li>
+							<li class="fragment">Contribuyo en prácticas de la metodología de desarrollo de <a href="https://en.wikipedia.org/wiki/Extreme_programming">XP</a>.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>¿Qué dice?</h2>
+					<p>Es un concepto que hace referencia a los costos de un esfuerzo adicional para subsanar los problemas generados por elecciones u omisiones que generan una "deuda".</p>
+				</section>
+
+				<section>
+					<h2>Ward Cunningham</h2>
+					<blockquote>"Algunos problemas con el código son como la deuda financiera. Está bien pedir prestado, siempre que lo pagues.".</blockquote>
+					<blockquote>"Con dinero prestado se puede hacer algo antes de lo que podría hacerlo sin él, pero hasta que no le devuelva ese dinero pagará intereses."</blockquote>
+				</section>
+
+				<section>
+					<h2>Ampliación del concepto</h2>
+					<p>Muchos otros autores ampliaron el concepto de Deuda Técnica:</p>
+					<ul>
+						<li class="fragment"><a href="https://en.wikipedia.org/wiki/Martin_Fowler">Martin Fowler</a> en sus cuatro cuadrantes.</li>
+						<li class="fragment">Joshua Kerievsky, con su concepto de negligencia arquitectónica.</li>
+						<li class="fragment"><a href="https://en.wikipedia.org/wiki/Philippe_Kruchten">Philippe Kruchten</a>, con sus cuatro áreas.</li>
+						<li class="fragment">Etc.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ejemplo 1:</h2>
+					<p><img src="img/1.png" alt=""><br><small>Philippe Kruchten</small></p>
+				</section>
+
+				<section>
+					<h2>Ejemplo 2:</h2>
+					<p><img src="img/2.png" alt=""><br><small>Martin Fowler</small></p>
+				</section>
+
+				<section>
+					<h2>¿Qué puede generar esta Deuda?</h2>
+					<ul>
+						<li class="fragment">Definición previa insuficiente</li>
+						<li class="fragment">Presión del área de negocio</li>
+						<li class="fragment">Falta de procesos o entendimiento</li>
+						<li class="fragment">Componentes fuertemente acoplados</li>
+						<li class="fragment">Falta de una batería de pruebas</li>
+						<li class="fragment">Falta de documentación</li>
+						<li class="fragment">Falta de colaboración</li>
+						<li class="fragment">Desarrollo en paralelo</li>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Posponer la refactorización</li>
+						<li class="fragment">Falta de alineación a los estándares</li>
+						<li class="fragment">Falta de conocimiento</li>
+						<li class="fragment">Alta rotación de personal</li>
+						<li class="fragment">Liderazgo técnico pobre</li>
+						<li class="fragment">Cambio de especificación de último minuto</li>
+					</ul>
+				</section>
+
+				<section data-background="img/workinghomer.gif">Otras cosas!</section>
+
+				<section>
+					<h2>¿Formas de la Deuda?</h2>
+					<ul>
+						<li class="fragment">Deliberada</li>
+						<li class="fragment">Desconocida</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>La Analogía</h2>
+					<p>El concepto de Deuda Técnica se puede explicar con una analogía financiera.</p>
+				</section>
+
+				<section>
+					<h2>Financiación de la Tarjeta de Crédito</h2>
+					<h3>Pago Mínimo</h3>
+				</section>
+
+				<section>
+					<h2>Premisas</h2>
+					<ul class="fragment">
+						<li>Capital a adeudar de $50.000.</li>
+						<li>Los intereses mensuales son del 4.5%.</li>
+						<li>El pago mínimo representa el 5% aproximado de la deuda total y el 100% de los intereses de financiación.</li>
+						<li>Pago mínimo inicial es de $2.500.</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>
+						<img src="img/3.png" alt="">
+					</p>
+				</section>
+
+				<section>
+					<ul>
+						<li>A los 6 meses se pagó $14.254 y sólo se cancelaron $3.443.</li>
+						<li class="fragment">A los 24 meses se pagó $54.223 y sólo se cancelaron $7.460.</li>
+						<li class="fragment">A los 120 meses se pagó $215.899 y sólo se cancelaron $23.708.</li>
+						<li class="fragment">A los 240 meses se pagó $334.146 y sólo se cancelaron $35.593.</li>
+					</ul>
+				</section>
+
+				<section data-background="img/jimwtf.gif"></section>
+
+				<section>
+					<h2>¿Qué pasa en el Software?</h2>
+				</section>
+
+				<section>
+					<h3>"Al igual que en la vida real no hay una única deuda".</h3>
+					<ul>
+						<li class="fragment">Si una persona toma deuda con más de una tarjeta de crédito ...</li>
+						<li class="fragment">... porque va a tomar una sola con el Software</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ejemplo:</h2>
+					<ul>
+						<li class="fragment">Deuda técnica 1: no realizar el refactor luego de un prototipo que "gustó" y se "tuneo" para que salga rápidamente a producción en el Módulo A.<br><br></li>
+						<li class="fragment">Deuda técnica 2: no tener conocimientos técnicos en la parametrización del ORM y asignar todas las relaciones como lazy loading.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>"El pago mínimo no aplica al Software".</h3>
+					<ul>
+						<li class="fragment">Si bien una tarjeta exige el pago mínimo mensual ...</li>
+						<li class="fragment">... en el mundo del Software podemos acumular interés (que nos generan punitorios) y retrasar los "pagos"</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ejemplo:</h2>
+					<ul>
+						<li>Punitorios 1: el encargado del refactor se desvincula de la empresa y quien lo sucede antes debe aprender la tecnología, comprender lo ya realizado, diseñar el refactor y por último ejecutarlo.
+							<ul>
+								<li class="fragment">¿Y si éste empleado se desvincula antes del diseño?</li>
+								<li class="fragment">¿Y si deja la tarea a la mitad?</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Punitorios 2: el encargado de documentar los sets de pruebas manuales, que ejecutó para dar el visto bueno del módulo, demora la tarea 12 meses.
+							<ul>
+								<li class="fragment">¿Se acordará que datos ejecutó?</li>
+								<li class="fragment">¿Se tendrán que diseñar nuevas pruebas?</li>
+								<li class="fragment">¿Funcionará el módulo con dichas pruebas?</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>"Acumular deuda genera intereses"</h2>
+				</section>
+
+				<section>
+					<h2>"Acumular intereses genera punitorios"</h2>
+				</section>
+
+				<section>
+					<h2>"Acumular Deuda a veces es una decisión acertada"</h2>
+					<p class="fragment">¿Es rentable al negocio saldar Deuda de un software Legacy que ya está siendo rediseñado?</p>
+				</section>
+
+				<section>
+					<h2>¿Cuándo se cancela la Deuda de la Tarjeta de Crédito?</h2>
+				</section>
+
+				<section data-background="img/debt.gif">Se paga!</section>
+
+				<section>
+					<h2>¿Cuándo se cancela la Deuda en el Software?</h2>
+				</section>
+
+				<section data-background="img/deaddance.gif">El Software muere</section>
+
+				<section>
+					<h2>Comentarios finales</h2>
+					<ul>
+						<li class="fragment"><a href="https://en.wikipedia.org/wiki/Fred_Brooks">Frederick Brooks</a>: No hay balas de plata.</li>
+						<li class="fragment">Generar Deuda es bueno.</li>
+						<li class="fragment">No pagar la Deuda es malo.</li>
+						<li class="fragment">Acumular demasiada Deuda es muy malo.</li>
+						<li class="fragment">La visibilidad de la Deuda tiene que surgir de las personas. La Deuda se comparte entre equipos.</li>
+						<li class="fragment">El tiempo es dinero.</li>
+						<li class="fragment">No incluir regularmente sprints de estabilización es casi una "sentencia de muerte" para el Software.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Bibliografía</h2>
+					<small>
+						<ul>
+							<li><a href="https://en.wikipedia.org/wiki/Ward_Cunningham">https://en.wikipedia.org/wiki/Ward_Cunningham</a></li>
+							<li><a href="http://wiki.c2.com/?WardExplainsDebtMetaphor">http://wiki.c2.com/?WardExplainsDebtMetaphor</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Technical_debt">https://en.wikipedia.org/wiki/Technical_debt</a></li>
+							<li><a href="https://martinfowler.com/bliki/TechnicalDebt.html">https://martinfowler.com/bliki/TechnicalDebt.html</a></li>
+							<li><a href="https://martinfowler.com/bliki/TechnicalDebtQuadrant.html">https://martinfowler.com/bliki/TechnicalDebtQuadrant.html</a></li>
+							<li><a href="https://www.agilealliance.org/introduction-to-the-technical-debt-concept/">https://www.agilealliance.org/introduction-to-the-technical-debt-concept/</a></li>
+							<li><a href="https://www.techopedia.com/definition/27913/technical-debt">https://www.techopedia.com/definition/27913/technical-debt</a></li>
+							<li><a href="https://resources.sei.cmu.edu/asset_files/WhitePaper/2012_019_001_58818.pdf">https://resources.sei.cmu.edu/asset_files/WhitePaper/2012_019_001_58818.pdf</a></li>
+							<li><a href="http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html">http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html</a></li>
+							<li><a href="https://www.infobae.com/espacio-no-editorial/2017/03/13/la-trampa-del-pago-minimo-de-las-tarjetas-de-credito/">https://www.infobae.com/espacio-no-editorial/2017/03/13/la-trampa-del-pago-minimo-de-las-tarjetas-de-credito/</a> (contenido pago, poco serio y cero académico)</li>
+						</ul>
+					</small>
+				</section>
+
+				<section>
+					<h1>¿Preguntas?</h1>
+				</section>
+
+				<section>
+					<section>
+						<h1>Muchas gracias!</h1>
+					</section>
+					<section data-background="img/minions.gif"></section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/lib/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				dependencies: [ // More info https://github.com/hakimel/reveal.js#dependencies
+					{ src: 'js/lib/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
